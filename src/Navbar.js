@@ -1,15 +1,21 @@
-function Navbar(){
-    return(
-        <div className = "Nav">
-            <ul>
-                <li>Hello, am David Neza</li>
-                <li>Home</li>   
-                <li>Blog</li>
-                <li>Signup</li>
-                <li>Login</li>                         
-            </ul>
-        </div>
-    )
+import React from 'react';
+import {  Link } from "react-router-dom";
+const Navbar= () =>{
+  return (
+  <div>
+    <li>
+      <Link to="/">Home</Link>
+    </li>
+    <li>
+      <Link to="/blog">Blog</Link>
+    </li>
+    <li>
+      <Link to="/signup">Signup</Link>
+    </li>
+    <li>
+      <Link to="/login">Login</Link>
+    </li>
+  </div>
+  );
 }
-
-export default Navbar
+export default Navbar;
